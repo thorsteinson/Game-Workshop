@@ -26,3 +26,14 @@ body {
 .title {
     font-size:120%;
 }
+
+.btn {
+    background-color: #72B82A;
+    border-color: #638B3A;
+}
+
+.btn:hover,
+.btn:focus {
+    background-color: #447A0E;
+    border-color: #638B3A;
+}
