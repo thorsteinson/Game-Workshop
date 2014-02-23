@@ -1,3 +1,28 @@
+body {
+    background-color: #72B82A;
+    background-image: url(img/1up.png);
+    background-repeat: repeat;
+}
+
+.container {
+    background-color: #AEDC7F;
+    font-size: 120%;
+}
+
 .media-object {
     width: 175px;
+}
+
+#beginner-panel {
+    background-color: #E69C84;
+    border-color: #9B5641;
+}
+
+#advanced-panel {
+    background-color: #BB71C2;
+    border-color: #602B65;
+}
+
+.title {
+    font-size:150%;
 }
