@@ -37,3 +37,7 @@ body {
     background-color: #447A0E;
     border-color: #638B3A;
 }
+
+.center {
+    text-align: center;
+}
