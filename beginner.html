@@ -11,6 +11,8 @@
 
   <body>
     <div class="container">
+      <div class="row">
+      <div class="col-md-8 col-md-offset-2">
       <h1>Beginner Mode: Let's Learn Scratch</h1>
 
       <p> This will go step by step on how to create a basic wall
@@ -70,7 +72,7 @@
       </p>
 
       <p>
-        <img src="img/empty-sprite-canvas.png" class="img-rounded"
+        <img src="img/empty-sprite-canvas.png" class="img-rounded img-responsive"
         alt="Blank sprite canvas" />
       </p>
 
@@ -101,7 +103,11 @@
       given key is pressed.  Change it from "space" to "up arrow," so
       we can make this move up when we press up.
       </p>
-      <p> Now go the motion events, and add a "change y by 10" block.
+      <p>
+        <img src="img/up-down-logic.png" class="img-rounded pull-right" alt="Up
+        down logical blocks" />
+
+        Now go the motion events, and add a "change y by 10" block.
       This block will adjust the y position of the paddle by 10.
       That's a reasonable default for us, so attach it to our other
       block. Now when you press up on your keyboard, the paddle will
@@ -111,11 +117,6 @@
       change the values so that they will perform the correct action.
       When finished, you should have the following two logical
       blocks:
-      </p>
-
-      <p>
-        <img src="img/up-down-logic.png" class="img-rounded" alt="Up
-        down logical blocks" />
       </p>
 
       <h2>Adding A 'Ball'</h2>
@@ -152,7 +153,11 @@
       speed and direction.
       </p>
 
-      <p> Now that we have a velocity, let's make the ball move based
+      <p>
+        <img src="img/variables.png" class="img-rounded pull-right" alt="Start of
+        the event loop for the ball" />
+
+        Now that we have a velocity, let's make the ball move based
       on that velocity. In our event loop, add two motion logical
       blocks.  One to change x by our x velocity, and another to
       change y.  Then add two logical right before our event loop, and
@@ -161,8 +166,6 @@
       the ball should start moving!  Here is what my event loop looks
       like so far:
 
-        <img src="img/variables.png" class="img-rounded" alt="Start of
-        the event loop for the ball" />
       </p>
 
       <p> At this point, we can begin adding conditions in our event
@@ -173,7 +176,6 @@
       and the left wall for later.  Here's what the condition is for
       the top wall, see if you can figure out what the rest are.
       </p>
-      <p>
         <img src="img/bounce-condition.png" class="img-rounded"
         alt="Bounce condition for the lower wall"/>
       </p>
@@ -212,7 +214,9 @@
       </p>
 
       <h3>Sending and Receiving Messages</h3>
-      <p> We've already been using a few events so far.  The flag, and
+      <p>
+
+        We've already been using a few events so far.  The flag, and
       the movement for the paddles are examples of events created
       through interaction with the keyboard and world.  However, we
       have the ability to create our own events, and react to them how
@@ -235,14 +239,12 @@
       Here's what my logic looked like for the paddle and the ball:
 
       <p>
-        <img src="img/finished-paddle.png" class="img-rounded"
-        alt="Completed paddle logic" />
+        <img src="img/finished-paddle.png" class="img-rounded
+        img-responsive" alt="Completed paddle logic" />
       </p>
 
-      <p>
-        <img src="img/finished-ball.png" class="img-rounded"
+        <img src="img/finished-ball.png" class="img-rounded pull-right"
         alt="Completed ball logic" />
-      </p>
         
       <h2>Now What?</h2>
       <p> You may have made the game, but there's still so much more
@@ -286,6 +288,8 @@
         </ul>
 
       </p>
+      </div> <!-- col-md-8 -->
+      </div> <!-- row -->
     </div> <!-- container -->
   </body>
 

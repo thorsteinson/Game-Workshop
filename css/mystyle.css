@@ -41,3 +41,8 @@ body {
 .center {
     text-align: center;
 }
+
+img.pull-right {
+    width: 45%;
+    padding-left: 20px;
+}
