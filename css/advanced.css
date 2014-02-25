@@ -1,4 +1,6 @@
 body {
+    background-image: url(../img/purple-up.png);
+    background-repeat: repeat;
     background-color: #7C2086
 }
 

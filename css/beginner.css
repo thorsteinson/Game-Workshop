@@ -1,4 +1,6 @@
 body {
+    background-image: url(../img/orange-up.png);
+    background-repeat: repeat;
     background-color: #CC552F;
 }
 
