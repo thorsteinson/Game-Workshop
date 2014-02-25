@@ -11,209 +11,212 @@
 
   <body>
     <div class="container">
-      <h1>Advanced Mode: Let's Modify Minecraft!</h1>
-      <p> This mode is much more of a hands off approach. You have to
-        be motivated and willing to explore. The tools you have access
-        to can do anything, it's just a matter of experimenting. So
-        let's get started!
-      </p>
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+          <h1>Advanced Mode: Let's Modify Minecraft!</h1>
+          <p> This mode is much more of a hands off approach. You have to
+            be motivated and willing to explore. The tools you have access
+            to can do anything, it's just a matter of experimenting. So
+            let's get started!
+          </p>
 
-      <h2>Setup</h2>
-      <p> To run the game, you need Python 2.7 (not 3 or above),
-        Pyglet, and of course, the actual game itself.  The Github page
-        for the code documents the installation process, but I will
-        outline how to do this.
-      </p>
+          <h2>Setup</h2>
+          <p> To run the game, you need Python 2.7 (not 3 or above),
+            Pyglet, and of course, the actual game itself.  The Github page
+            for the code documents the installation process, but I will
+            outline how to do this.
+          </p>
 
-      <h3>Python</h3>
-      <p> If on Windows, then download and Install Python 2.7 from
-        the <a href="http://python.org/download/releases/2.7.6/"> Python
-          releases page </a>. If you're on Mac or Linux, then you likely
-        already have Python installed, but could download it either from
-        that page or your package manager.
-      </p>
+          <h3>Python</h3>
+          <p> If on Windows, then download and Install Python 2.7 from
+            the <a href="http://python.org/download/releases/2.7.6/"> Python
+              releases page </a>. If you're on Mac or Linux, then you likely
+            already have Python installed, but could download it either from
+            that page or your package manager.
+          </p>
 
-      <h3>Pip and Pyglet</h3>
-      <p> Pip is a Python package manager, and is the easiest way to
-        get Pyglet on any system. For Windows,
-        install <a href="https://sites.google.com/site/pydatalog/python/pip-for-windows">
-          from here </a>, and then install Pyglet. For Macs, go to the
-        terminal and execute the following command: <code>sudo
-          easy_install pip && pip install pyglet</code>. For Linux,
-        install pip with your package manager of choice, and
-        then <code>pip install pyglet</code>, just as it's done on the
-        Mac.
-      </p>
+          <h3>Pip and Pyglet</h3>
+          <p> Pip is a Python package manager, and is the easiest way to
+            get Pyglet on any system. For Windows,
+            install <a href="https://sites.google.com/site/pydatalog/python/pip-for-windows">
+              from here </a>, and then install Pyglet. For Macs, go to the
+            terminal and execute the following command: <code>sudo
+              easy_install pip && pip install pyglet</code>. For Linux,
+            install pip with your package manager of choice, and
+            then <code>pip install pyglet</code>, just as it's done on the
+            Mac.
+          </p>
 
-      <h3>Minecraft</h3>
-      <p> <a href="https://github.com/fogleman/Minecraft"> The Github
-          page </a> for the project has a very extensive set of
-        instructions that can help if you get lost at the other steps,
-        and outlines what the project is. To get the source code, it
-        is <strong>highly recommended that you use git</strong>. Git is a
-        version control system that allows you to edit code and save
-        progress in increments, allowing you to undo any mistakes that
-        you make over time, and build of other projects. Source control
-        is an absolute necessity for any project, so you might as well
-        start learning it now if you
-        haven't. <a href="http://try.github.io/levels/1/challenges/1">
-          Here is a fantastic 15 minute interactive tutorial</a>, but if
-        you really don't care, then here's
-        a <a href="https://github.com/fogleman/Minecraft/archive/master.zip">
-          zip file with all of the code</a>.
-      </p>
+          <h3>Minecraft</h3>
+          <p> <a href="https://github.com/fogleman/Minecraft"> The Github
+              page </a> for the project has a very extensive set of
+            instructions that can help if you get lost at the other steps,
+            and outlines what the project is. To get the source code, it
+            is <strong>highly recommended that you use git</strong>. Git is a
+            version control system that allows you to edit code and save
+            progress in increments, allowing you to undo any mistakes that
+            you make over time, and build of other projects. Source control
+            is an absolute necessity for any project, so you might as well
+            start learning it now if you
+            haven't. <a href="http://try.github.io/levels/1/challenges/1">
+              Here is a fantastic 15 minute interactive tutorial</a>, but if
+            you really don't care, then here's
+            a <a href="https://github.com/fogleman/Minecraft/archive/master.zip">
+              zip file with all of the code</a>.
+          </p>
 
-      <h2>Running the Game</h2>
-      <p> To run the game, first open up a terminal and go to the
-        directory where the source code is located.  This is wherever
-        you cloned the repository, or unzipped the code. The directory
-        contains the following four files:
-      </p>
-      <ul>
-        <li>LICENSE</li>
-        <li>main.py</li>
-        <li>README.md</li>
-        <li>texture.png</li>
-      </ul>
-      <p>
-        Once in the directory, execute the following command to start
-        running the game: <code>python main.py</code>.  If the
-        terminal outputs the following:
-      </p>
-      <pre>
-Traceback (most recent call last):
-  File "main.py", line 6, in &lt;module&gt;
-    from pyglet import image
-  File "/usr/lib/python3.3/site-packages/pyglet/__init__.py", line 249
-    print '%s%s %s' % (indent, name, location)
-      </pre>
-      <p>
-        Then that just means it's running Python3 by default.  Instead
-        execute <code>python2 main.py</code>, and it should run
-        properly. Once the game runs, you should see a blank 800x600
-        blue window pop up on the screen for a few seconds, while it
-        generates the blocks for the world, and then you should be
-        able to move around!  Here is what it looks like:
-      </p>
+          <h2>Running the Game</h2>
+          <p> To run the game, first open up a terminal and go to the
+            directory where the source code is located.  This is wherever
+            you cloned the repository, or unzipped the code. The directory
+            contains the following four files:
+          </p>
+          <ul>
+            <li>LICENSE</li>
+            <li>main.py</li>
+            <li>README.md</li>
+            <li>texture.png</li>
+          </ul>
+          <p>
+            Once in the directory, execute the following command to start
+            running the game: <code>python main.py</code>.  If the
+            terminal outputs the following:
+          </p>
+          <pre>
+            Traceback (most recent call last):
+            File "main.py", line 6, in &lt;module&gt;
+            from pyglet import image
+            File "/usr/lib/python3.3/site-packages/pyglet/__init__.py", line 249
+            print '%s%s %s' % (indent, name, location)
+          </pre>
+          <p>
+            Then that just means it's running Python3 by default.  Instead
+            execute <code>python2 main.py</code>, and it should run
+            properly. Once the game runs, you should see a blank 800x600
+            blue window pop up on the screen for a few seconds, while it
+            generates the blocks for the world, and then you should be
+            able to move around!  Here is what it looks like:
+          </p>
 
-      <p>
-        <img src="img/minecraft-start.png" class="img-rounded"
-             alt="What the window looks like when the world is initially
-                  loaded" />
-      </p>
+          <p>
+            <img src="img/minecraft-start.png" class="img-rounded img-responsive"
+                 alt="What the window looks like when the world is initially
+                      loaded" />
+          </p>
 
-      <h3>Controls</h3>
-      <table class="table">
-        <tr>
-          <th>Key</th>
-          <th>Action</th>
-        </tr>
-        <tr>
-          <td>W</td>
-          <td>Move forward</td>
-        </tr>
-        <tr>
-          <td>S</td>
-          <td>Move backward</td>
-        </tr>
-        <tr>
-          <td>A</td>
-          <td>Strafe left</td>
-        </tr>
-        <tr>
-          <td>D</td>
-          <td>Strafe right</td>
-        </tr>
-        <tr>
-          <td>Tab</td>
-          <td>Enter flying mode</td>
-        </tr>
-        <tr>
-          <td>Esc</td>
-          <td>Exit window and move mouse</td>
-        </tr>
-        <tr>
-          <td>Left Click</td>
-          <td>Remove block</td>
-        </tr>
-        <tr>
-          <td>Right Click</td>
-          <td>Add block</td>
-        </tr>
-        <tr>
-          <td>0-3</td>
-          <td>Switch block type</td>
-        </tr>
-      </table>
+          <h3>Controls</h3>
+          <table class="table">
+            <tr>
+              <th>Key</th>
+              <th>Action</th>
+            </tr>
+            <tr>
+              <td>W</td>
+              <td>Move forward</td>
+            </tr>
+            <tr>
+              <td>S</td>
+              <td>Move backward</td>
+            </tr>
+            <tr>
+              <td>A</td>
+              <td>Strafe left</td>
+            </tr>
+            <tr>
+              <td>D</td>
+              <td>Strafe right</td>
+            </tr>
+            <tr>
+              <td>Tab</td>
+              <td>Enter flying mode</td>
+            </tr>
+            <tr>
+              <td>Esc</td>
+              <td>Exit window and move mouse</td>
+            </tr>
+            <tr>
+              <td>Left Click</td>
+              <td>Remove block</td>
+            </tr>
+            <tr>
+              <td>Right Click</td>
+              <td>Add block</td>
+            </tr>
+            <tr>
+              <td>0-3</td>
+              <td>Switch block type</td>
+            </tr>
+          </table>
 
-      <h2>Extending the Game</h2>
-      <p> Now that you actually have the game running on your
-        computer, the fun part starts! Modify the source code.
-        Absolutely everything that runs the game is in the
-        file <code>main.py</code>, and it is heavily commented and
-        outlined so that you can start to understand how it works. After
-        messing around in the game for a bit, start trying to
-        familiarize yourself with the source code and understand how it
-        works. Then start to modify it. Here are some suggestions:
-      </p>
+          <h2>Extending the Game</h2>
+          <p> Now that you actually have the game running on your
+            computer, the fun part starts! Modify the source code.
+            Absolutely everything that runs the game is in the
+            file <code>main.py</code>, and it is heavily commented and
+            outlined so that you can start to understand how it works. After
+            messing around in the game for a bit, start trying to
+            familiarize yourself with the source code and understand how it
+            works. Then start to modify it. Here are some suggestions:
+          </p>
 
-      <h3>Change Terrain Generation</h3>
-      <p> The world that the game generates by default is kind of
-        small and boring.  See if you can make it larger.  Try to make
-        it more random.  Maybe add a few structures.  The code for
-        generating the blocks begins on line 152. 
-      </p>
+          <h3>Change Terrain Generation</h3>
+          <p> The world that the game generates by default is kind of
+            small and boring.  See if you can make it larger.  Try to make
+            it more random.  Maybe add a few structures.  The code for
+            generating the blocks begins on line 152. 
+          </p>
 
-      <h3>Add More Blocks</h3>
-      <p> There's only three blocks that you start with.  So adding
-        more is going to require modifying the textures file provided,
-        and then extending the source code.  Blocks in this version of
-        minecraft aren't unique, they all behave the same but have a
-        different texture.  Try make blocks their own unique object,
-        that can be extended.  Look at the real Minecraft as an example.
-        What makes blocks different, and what are their properties?
-        Here's a few that come to mind:
-      </p>
-      <ul>
-        <li>Gravity</li>
-        <li>Sounds</li>
-        <li>Mine rate</li>
-        <li>Explosive durability</li>
-      </ul>
+          <h3>Add More Blocks</h3>
+          <p> There's only three blocks that you start with.  So adding
+            more is going to require modifying the textures file provided,
+            and then extending the source code.  Blocks in this version of
+            minecraft aren't unique, they all behave the same but have a
+            different texture.  Try make blocks their own unique object,
+            that can be extended.  Look at the real Minecraft as an example.
+            What makes blocks different, and what are their properties?
+            Here's a few that come to mind:
+          </p>
+          <ul>
+            <li>Gravity</li>
+            <li>Sounds</li>
+            <li>Mine rate</li>
+            <li>Explosive durability</li>
+          </ul>
 
 
-      <h3>Change the Laws of Physics</h3>
-      <p> The physics for the game are mainly controlled by several
-        constants in the class.  What happens when you mess around with
-        these?  How does the game change when you edit terminal
-        velocity, gravity, etc.?
-      </p>
+          <h3>Change the Laws of Physics</h3>
+          <p> The physics for the game are mainly controlled by several
+            constants in the class.  What happens when you mess around with
+            these?  How does the game change when you edit terminal
+            velocity, gravity, etc.?
+          </p>
 
-      <h3>Change the Rendering</h3>
-      <p> The game is rendered in real time through OpenGL, a language
-        that provides direct calls to the graphics card to do any sort
-        of visual operation quickly.  Pretty much all video games take
-        advantage of OpenGL for any graphics intensive work.  Look at
-        the methods of the class with the name <code>draw</code>, and
-        try to figure out how they work.  OpenGL itself is an entirely
-        different language with it's own quirks, but you can probably
-        mess around and see how to get it to work.  Try to draw the
-        article in another color, or maybe instead of having a rectangle
-        appear on the selected block, make that block glow brighter.
-      </p>
+          <h3>Change the Rendering</h3>
+          <p> The game is rendered in real time through OpenGL, a language
+            that provides direct calls to the graphics card to do any sort
+            of visual operation quickly.  Pretty much all video games take
+            advantage of OpenGL for any graphics intensive work.  Look at
+            the methods of the class with the name <code>draw</code>, and
+            try to figure out how they work.  OpenGL itself is an entirely
+            different language with it's own quirks, but you can probably
+            mess around and see how to get it to work.  Try to draw the
+            article in another color, or maybe instead of having a rectangle
+            appear on the selected block, make that block glow brighter.
+          </p>
 
-      <h3>Add Enemies</h3>
-      <p> This is probably the most complex of anything suggested so
-        far, because it requires a huge amount of extra work. Not only
-        do you need to model how the different enemies would interact
-        with the world through AI, but you <em>also</em> would have to
-        animate the models for them. But if you did it, it would
-        awesome. You might be able to look at Minecraft mods to find 3D
-        models for various types of enemies, or you could just do
-        something as simple as have a red flashing block that chases you
-        around.
-      </p>
-      
+          <h3>Add Enemies</h3>
+          <p> This is probably the most complex of anything suggested so
+            far, because it requires a huge amount of extra work. Not only
+            do you need to model how the different enemies would interact
+            with the world through AI, but you <em>also</em> would have to
+            animate the models for them. But if you did it, it would
+            awesome. You might be able to look at Minecraft mods to find 3D
+            models for various types of enemies, or you could just do
+            something as simple as have a red flashing block that chases you
+            around.
+          </p>
+        </div> <!-- col-md-8 -->
+      </div> <!-- row -->
     </div> <!-- container -->
   </body>
 
